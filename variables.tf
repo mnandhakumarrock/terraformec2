@@ -15,3 +15,26 @@ variable "tags" {
   description = "Resource tags"
   default     = {}
 }
+
+variable "web_sg_name" {
+  type        = string
+  description = "The web security group name"
+  default     = "allow_web_traffic_sg"
+}
+
+variable "web_port" {
+  type        = number
+  description = "The HTTP port"
+  default     = 80
+}
+
+variable "protocol" {
+  type        = string
+  description = "The layer 4 protocol"
+  default     = "tcp"
+}
+
+variable "cidr_blocks" {
+  type    = list(string)
+  default = ["0.0.0.0/0"]
+}
