@@ -20,8 +20,3 @@ resource "aws_security_group" "allow_web_traffic" {
 
   tags = var.tags_in
 }
-
-# resource "aws_network_interface_sg_attachment" "web_sg_attachment" {
-#   security_group_id    = module.security_group.sg_id
-#   network_interface_id = var.network_interface_id_in
-# }
