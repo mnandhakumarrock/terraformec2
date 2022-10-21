@@ -1,3 +1,9 @@
+variable "region" {
+  type        = string
+  description = "The AWS Region"
+  default     = "us-west-2"
+}
+
 variable "ami" {
   type        = string
   description = "The AMI"
